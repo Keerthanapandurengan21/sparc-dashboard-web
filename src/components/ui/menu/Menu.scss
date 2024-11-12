@@ -1,0 +1,62 @@
+.menu {
+  display: flex;
+  
+  .sidebar{
+    height: 100vh;
+  }
+  .upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+    background-color: #f8f9fa; 
+
+    
+    .upload-tabs {
+      display: flex;
+      justify-content: center; 
+      margin: 20px 0px;
+      position: relative;
+
+      
+      .tab-button {
+        padding: 10px 20px;
+        cursor: pointer;
+        background: none; 
+        border: none;
+        color: #555; 
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0 15px; 
+        position: relative;
+        transition: color 0.3s ease;
+
+     
+        &:hover {
+          color: #333; 
+        }
+
+        &.active {
+          color: #007bff; 
+          font-weight: 600; 
+
+
+          &::after {
+            content: "";
+            display: block;
+            margin: 0 auto;
+            width: 60%; 
+            padding-top: 5px;
+            border-bottom: 3px solid #007bff; 
+          }
+        }
+      }
+    }
+
+    .upload-content {
+      padding: 20px;
+      border-radius: 8px;
+      width: 80%; 
+    }
+  }
+}

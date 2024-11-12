@@ -1,0 +1,12 @@
+.loader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 100%;
+
+  #activity-loader{
+    width: 175px;
+    height: 175px;
+  }
+}

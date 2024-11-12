@@ -1,0 +1,54 @@
+.header {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 15px; 
+    background-color: #333; 
+    color: white;
+
+    .dashboard-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .custom-select {
+        width: 250px; 
+      }
+
+      .MuiFormControl-root {
+        min-width: 200px;
+        margin-right: 20px;
+      }
+      .site-select {
+        width: 400px; 
+        
+        .MuiInputBase-root {
+          background-color: white; 
+          color: black; 
+        }
+      
+        .MuiSelect-select {
+          padding: 10px; 
+        }
+    
+      
+        .MuiSelect-select.MuiSelect-select {
+          &:focus {
+            background-color: white; 
+          }
+        }
+      }
+      
+    }
+  }
+  
+  .logo-image-header {
+    height: 40px; 
+    margin-right: 20px; 
+  }
+  
+  h2 {
+    margin: 0; 
+    font-size: 1.5em; 
+  }
+  

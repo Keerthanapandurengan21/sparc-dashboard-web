@@ -1,0 +1,126 @@
+.file-upload-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  
+    .progress-bar-container {
+      display: flex;
+      align-items: center; 
+      justify-content: space-between; 
+      padding: 8px; 
+      width: 100%;
+    }
+  
+    .file-info {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex: 1;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 1.5rem;
+      text-align: center;  // Center the heading
+    }
+  
+    .form-control {
+      width: 100%;
+      margin-bottom: 1.5rem;
+  
+      .MuiOutlinedInput-root {
+        background-color: #fff;
+        height: 50px;
+      }
+  
+      .MuiInputLabel-root {
+        color: #666;
+        transition: color 0.2s ease;  // Smooth transition for label color
+      }
+  
+      .Mui-focused .MuiOutlinedInput-notchedOutline {
+        border-color: #3f51b5;
+      }
+    }
+  
+    .file-upload {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 1.5rem;
+  
+      .drag-drop-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px dashed #3f51b5;
+        border-radius: 8px;
+        padding: 2rem;
+        width: 89%;
+        max-width: 100%;  // Match input width
+        cursor: pointer;
+        text-align: center;
+  
+        .cloud-icon {
+          font-size: 48px;
+          color: #3f51b5;
+          margin-bottom: 0.5rem;
+        }
+  
+        .drag-drop-text {
+          font-size: 1rem;
+          color: #666;
+          margin-bottom: 1rem;
+        }
+  
+        Button {
+          background-color: #3f51b5;
+          color: #fff;
+          &:hover {
+            background-color: #303f9f;
+          }
+        }
+      }
+  
+      .progress-container {
+        margin-top: 10px;
+        width: 100%; /* Ensure it takes the full width */
+      }
+      
+      .file-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .progress-text {
+        display: flex;
+        align-items: center; /* Center align the text and spinner */
+        justify-content: space-between; /* Space between text and spinner */
+        padding: 5px 0;
+      }
+      
+      .percentage-text {
+        margin-left: 10px; /* Space between progress text and percentage */
+        font-weight: bold;
+      }
+    }
+  
+    .cancel-icon {
+      color: red; 
+      &:hover {
+        color: darkred;
+      }
+    }
+  }
+  

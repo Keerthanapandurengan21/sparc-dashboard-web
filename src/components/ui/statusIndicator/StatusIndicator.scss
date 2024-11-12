@@ -1,0 +1,17 @@
+.status-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+  
+    .indicator-circle {
+      width: 12px; 
+      height: 12px; 
+      border-radius: 50%; 
+    }
+
+    span {
+      font-weight: bold; 
+      font-size: 14px;
+    }
+  }
+  

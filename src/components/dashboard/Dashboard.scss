@@ -1,0 +1,102 @@
+.dashboard {
+  display: flex;
+
+  .dashboard-content {
+    flex: 1;
+    padding: 20px;
+
+    .dashboard-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+
+      .custom-select {
+        width: 250px; 
+      }
+
+      .MuiFormControl-root {
+        min-width: 200px;
+        margin-right: 20px;
+      }
+    }
+
+    .graphs {
+      display: flex;
+      justify-content: space-between;
+
+      .graph {
+        width: 45%;
+
+        .orders-over-time-container {
+          display: flex;
+          justify-content: space-between;
+        }
+        .filter-link{
+          display: flex;
+          justify-content: flex-end;
+          margin-top: -10px;
+          cursor: pointer;
+          text-decoration: underline;
+          color: #3f51b5;
+        }
+
+        .current-status-container {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+      }
+    }
+
+    .tables {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    h5 {
+      text-align: center;
+    }
+
+    .no-data-message {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      color: #777;
+      font-size: 1.5rem;
+      text-align: center;
+      font-weight: bold;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 5px;
+      border: 2px dashed #ccc;
+    }
+  }
+}
+.custom-date-range{
+  display: flex;
+.custom-button {
+  background-color: #3f51b5; 
+  color: white; 
+  border: none;
+  border-radius: 5px; 
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; 
+  
+  &:hover {
+    background-color: #303f9f; 
+  }
+
+  &:disabled {
+    background-color: #c5cae9; 
+    cursor: not-allowed; 
+  }
+}
+}
